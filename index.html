@@ -12,7 +12,7 @@
     <link id="lato" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header1">
         <nav id="navbar" class="navbar">
             <img class="logo" src="./img/logotipo.png" alt="logomate" style="max-width: 170px;">
             <ul>
@@ -32,13 +32,14 @@
         <div class="banner">
             <img src="./img/banner.jpg" alt="Banner de Tienda de Mate">
             <div class="banner-text">
-                <h1>Bienvenido a Tu Tienda de Mate</h1>
+                <h1>Bienvenido a Tu Tienda del Mate</h1>
                 <p>Descubre nuestra variedad de productos para disfrutar del mejor mate.</p>
                 <a href="./encontranos.html" class="btnp">Encontranos</a>
             </div>
         </div>
-
+        <h2 class="tittle1">Nuestros productos</h2>
         <div class="caja1">
+         
             <div class="carousel-container">
                 <button class="prev" onclick="prevSlide()">&#10094;</button>
                 <div class="carousel-slides">
@@ -56,6 +57,21 @@
             </div>
         </div>
     </main>
+
+    <div class="container">
+        <div class="image">
+            <img src="./img/index1.jpg" alt="Imagen 1">
+        </div>
+        <div class="image">
+            <img src="./img/index2.jpg" alt="Imagen 2">
+        </div>
+    </div>
+
+    <div class="sector">
+        <div class="image2">
+            <img src="./img/tipodemate.jpg" alt="tipoDeMates">
+        </div>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -75,7 +91,7 @@
             <div class="footer-section links">
                 <h2>Necesitás ayuda</h2>
                 <ul>
-                    <li><a id="foot" href="./tutoriales.html">Tutoriales</a></li>
+                    <li><a id="foot" href="./tutoriales.html">Tutorial</a></li>
                     <li><a id="foot" href="./trabaja-en-tdm.html">Trabajá en TDM</a></li>
                     <li><a id="foot" href="./franquicias.html">Franquicias</a></li>
                     <li><a id="foot" href="./contacto.html">Contacto</a></li>
@@ -84,6 +100,7 @@
             <div class="footer-section contact">
                 <h2>Suscribete a nuestro newsletter</h2>
                 <input type="email" name="email" id="email" placeholder="Tu email">
+                <button id="btnsuscribe" type="submit" onclick="alert(`Tu subscripción fue exitosa`)">Suscribirme</button>
                 <h2>Contacto</h2>
                 <p>Email: info@tiendademate.com.ar</p>
                 <p>Teléfono: +54 9 11 1234 5678</p>
